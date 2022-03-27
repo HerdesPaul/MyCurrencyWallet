@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "baseUrl": "./src",
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "pretty": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "incremental": true,
+    "sourceMap": true,
+    "paths": {
+      "atoms/*": ["components/atoms/*"],
+      "atoms": ["components/atoms"],
+      "molecules/*": ["components/molecules/*"],
+      "molecules": ["components/molecules"],
+      "organisms/*": ["components/organisms/*"],
+      "organisms": ["components/organisms"],
+      "constants/*": ["constants/*"],
+      "screens/*": ["screens/*"],
+      "screens": ["screens"],
+      "features/*": ["features/*"],
+      "features": ["features"],
+      "hooks/*": ["hooks/*"],
+      "hooks": ["hooks"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "include": ["src/**/*", "**/*.ts", "**/*.tsx", "App.tsx"]
+}
